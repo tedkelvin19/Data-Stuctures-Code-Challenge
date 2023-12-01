@@ -1,4 +1,4 @@
-# Question 1 Solution
+# Question 1 Solution.
 
 def is_balanced(expression):
         stack = []
@@ -22,7 +22,7 @@ print(is_balanced(expression1))
 print(is_balanced(expression2))
 
 
-# Question 2 Solution
+# Question 2 Solution.
 
 def remove_duplicates(sequence):
     seen = set()
@@ -36,3 +36,20 @@ def remove_duplicates(sequence):
 list1= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(remove_duplicates(list1))
 print(list1)
+
+
+
+# Question 3 Solution.
+
+def word_frequency(sentence):
+    frequency = {}
+    words = sentence.split()
+    for word in words:
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+    return frequency
+
+line1 = "Learning programming is very exiciting. I love it. programming in python is very exiciting." 
+print(word_frequency(line1))
